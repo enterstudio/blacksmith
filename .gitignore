@@ -5,5 +5,5 @@ tools
 npm-debug.log
 build
 coverage
-/app/runtimes/*
-!/app/runtimes/README
+/runtimes/*
+!/runtimes/README

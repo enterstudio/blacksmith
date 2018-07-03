@@ -1,0 +1,14 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - cmd-parser > lodash:
+        patched: '2018-07-03T07:14:07.314Z'
+    - nami-utils > lodash:
+        patched: '2018-07-03T07:14:07.314Z'
+    - node-common-utils > nami-utils > lodash:
+        patched: '2018-07-03T07:14:07.314Z'
+    - blacksmith-extra-component-types > nami-utils > lodash:
+        patched: '2018-07-03T07:14:07.314Z'

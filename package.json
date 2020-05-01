@@ -15,7 +15,8 @@
     "cmd-parser": "^0.0.1",
     "blacksmith-core": "bitnami/blacksmith-core#v0.0.26",
     "common-utils": "bitnami/node-common-utils#v2.0.2",
-    "version-utils": "bitnami/node-version-utils#v2.0.0"
+    "version-utils": "bitnami/node-version-utils#v2.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -37,8 +38,11 @@
     "ci-test": "gulp ci-test",
     "ci-lint": "gulp ci-lint",
     "ci-cpd": "gulp ci-cpd",
-    "eslint-report": "eslint *.js lib -f node_modules/eslint-html-reporter/reporter.js -o qa/eslint-report.html"
+    "eslint-report": "eslint *.js lib -f node_modules/eslint-html-reporter/reporter.js -o qa/eslint-report.html",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Bitnami",
-  "license": "GPL-2.0"
+  "license": "GPL-2.0",
+  "snyk": true
 }
